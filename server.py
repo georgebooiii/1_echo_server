@@ -49,7 +49,7 @@ while True:
             logging.warning(f"Порт {port} уже занят, пробуем следующий порт.")
             port += 1  # Увеличиваем номер порта и пробуем снова
         else:
-            logging.error(f"Ошибка при попытке привязать сокет к порту {port}: {e}")
+git@github.com:georgebooiii/1_echo_server.git            logging.error(f"Ошибка при попытке привязать сокет к порту {port}: {e}")
             sys.exit(1)  # Завершаем программу при других ошибках
 
 # Выводим в консоль номер порта, который сервер слушает
@@ -121,3 +121,4 @@ while True:
 # После выхода из основного цикла закрываем главный серверный сокет
 sock.close()
 logging.info("Server is off")  # Записываем в лог
+logging.info("Goodbye")
